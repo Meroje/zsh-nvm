@@ -4,5 +4,8 @@ source ../common.sh
 # Load zsh-nvm
 load_zsh_nvm
 
+export NVM_AUTO_USE_ACTIVE=true
 # Check nvm is wrapped with our revert command
-nvm revert || die "nvm isn't wrapped with our revert command"
+nvm use system
+
+! "$NVM_AUTO_USE_ACTIVE"
