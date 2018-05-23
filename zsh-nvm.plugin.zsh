@@ -1,5 +1,3 @@
-ZSH_NVM_DIR=${0:a:h}
-
 if [[ -z "$NVM_INSTALL_DIR" ]] && (( $+commands[brew] )) && [[ -d "$(brew --prefix nvm 2> /dev/null)" ]]; then
   export NVM_INSTALL_DIR="$(brew --prefix nvm)"
 fi
